@@ -1,7 +1,7 @@
 /** @format */
 
 .container-trans {
-  padding: 0 0 0 18rem;
+  padding: 0 2rem 0 16rem;
   background-color: whitesmoke;
 }
 
@@ -28,7 +28,6 @@
 .section-two {
   display: flex;
   flex-flow: row wrap;
-  /* flex-direction: row; */
   margin-top: 2rem;
   justify-content: space-between;
 }
@@ -38,11 +37,28 @@
   margin-top: 1rem;
 }
 
-.payment-section {
+.section-three {
   display: flex;
   flex-direction: row;
-  position: relative;
   margin-bottom: 2rem;
+}
+.section-three-items:first-child {
+  flex: 3;
+  border: 2px solid green;
+}
+
+.section-three-items:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  flex: 4;
+  border: 2px solid green;
+}
+
+.section-three-items:nth-child(3) {
+  flex: 3;
+
+  position: relative;
+  border: 2px solid green;
 }
 
 .item-toggle {
@@ -51,8 +67,6 @@
   background-color: white;
   margin-left: 8rem;
   position: absolute;
-  top: 0;
-  left: 45rem;
   /* padding: 0.5rem; */
 }
 
@@ -177,8 +191,6 @@ td:nth-child(6) {
     background-color: white;
     margin-left: 1rem;
     position: absolute;
-    top: 0;
-    left: 15rem;
     /* padding: 0.5rem; */
   }
 

@@ -96,17 +96,18 @@ class Dashboard extends Component {
           </div>
         </div>
 
+        <h1 style={{ marginTop: "2rem", marginBottom: "2rem" }}>Payments</h1>
+
         <div className="section-three">
-          <h1 style={{ marginTop: "2rem", marginBottom: "2rem" }}>Payments</h1>
+          <div className="section-three-items">
+            showing 20 > out of 500 payment
+          </div>
 
-          <div className="payment-section">
-            <div className="showing">showing 20 > out of 500 payment</div>
-            <input
-              className="input-payment-section"
-              placeholder="search payment"
-            />
-            <div>show</div>
-
+          <div className="section-three-items">
+            <input placeholder="search payment" />
+            <span>show</span>
+          </div>
+          <div className="section-three-items">
             <div className="item-toggle">
               <div>
                 All{" "}

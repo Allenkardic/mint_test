@@ -69,6 +69,8 @@ input {
     flex-direction: row;
     padding: 0.5rem 0.5rem;
     background-color: white;
+    position: sticky -webkit-sticky;
+    top: 0;
   }
 
   .navbar-items:first-child {
