@@ -20,7 +20,7 @@ class Navbar extends Component {
         </div>
 
         <div className="navbar-items">
-          <div className="navbar-items-contents">support</div>
+          <div className="navbar-items-contents">Support</div>
           <div className="navbar-items-contents">FAQ</div>
           <div className="navbar-items-contents">
             <i class="far fa-bell bell" />

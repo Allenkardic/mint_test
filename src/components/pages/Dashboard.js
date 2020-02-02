@@ -193,6 +193,15 @@ class Dashboard extends Component {
             <Transaction trans={item} key={item.id} />
           ))}
         </div>
+        <div className="next-page">
+          <div className="next-page-items">Showing 1 to 10 of 500 entries</div>
+          <div className="next-page-items">
+            <div className="next-page-items-content">Previous</div>
+            <div className="next-page-items-content">1</div>
+            <div className="next-page-items-content">2</div>
+            <div className="next-page-items-content">Next</div>
+          </div>
+        </div>
       </div>
     );
   }
