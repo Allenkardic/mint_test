@@ -5,6 +5,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { getUsers } from "../../redux/actions/transAction";
 import chart from "../../images/chart.png";
+import dashboard from "../../images/dashboard.PNG";
 
 import Transaction from "./Transaction";
 import "../../css/Dashboard.css";
@@ -89,10 +90,52 @@ class Dashboard extends Component {
 
         <div className="section-two">
           <div className="section-two-items">
-            <img style={{ maxWidth: "100%" }} src={chart} alt="img" />
+            <img
+              style={{ width: "800px", maxWidth: "100%", height: "100%" }}
+              src={dashboard}
+              alt="img"
+            />
           </div>
           <div className="section-two-items">
-            <img style={{ maxWidth: "100%" }} src={chart} alt="img" />
+            <div
+              style={{
+                border: "1px solid whitesmoke",
+                padding: "1rem",
+                height: "50%"
+              }}>
+              <div style={{ marginBottom: "0.8rem" }}>Order</div>
+              <hr style={{ marginBottom: "0.8rem" }} />
+              <div style={{ marginBottom: "0.8rem" }}>
+                {" "}
+                Pending: <span style={{ color: "gold" }}>20</span>
+              </div>
+              <div style={{ marginBottom: "0.8rem" }}>
+                {" "}
+                Reconciled Order: <span style={{ color: "green" }}>20</span>
+              </div>
+              <div style={{ marginBottom: "0.8rem" }}>
+                {" "}
+                Total Order: <span style={{ color: "blue" }}>20</span>
+              </div>
+            </div>
+            <div
+              style={{
+                border: "1px solid whitesmoke",
+                height: "50%",
+                padding: "1rem"
+              }}>
+              <div style={{ marginBottom: "0.8rem" }}>Order</div>
+              <hr style={{ marginBottom: "0.8rem" }} />
+              <div style={{ marginBottom: "0.8rem" }}>
+                Pending: <span style={{ color: "gold" }}>20</span>
+              </div>
+              <div style={{ marginBottom: "0.8rem" }}>
+                Reconciled Order: <span style={{ color: "green" }}>20</span>
+              </div>
+              <div style={{ marginBottom: "0.8rem" }}>
+                Total Order: <span style={{ color: "blue" }}>20</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -104,10 +147,14 @@ class Dashboard extends Component {
           </div>
 
           <div className="section-three-items">
-            <input placeholder="search payment" />
-            <span>show</span>
+            <i style={{ paddingTop: "0.4rem" }} class="fas fa-search" />
+            <input
+              className="section-three-input"
+              placeholder="search payment"
+            />
           </div>
           <div className="section-three-items">
+            <span>show</span>
             <div className="item-toggle">
               <div>
                 All{" "}

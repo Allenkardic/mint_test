@@ -29,44 +29,74 @@
   display: flex;
   flex-flow: row wrap;
   margin-top: 2rem;
-  justify-content: space-between;
+  border: 1px solid whitesmoke;
 }
 
 .section-two-items {
-  width: 600px;
   margin-top: 1rem;
+  border: 1px solid red;
+  height: 350px;
+  background-color: white;
+  border: 1px solid whitesmoke;
+}
+
+.section-two-items:first-child {
+  flex: 6;
+  margin-top: 1rem;
+  border: 1px solid whitesmoke;
+}
+
+.section-two-items:nth-child(2) {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  border: 1px solid whitesmoke;
+}
+
+hr {
+  margin-bottom: 0.8rem;
+  background: linear-gradient(to right, green, yellow);
+  height: 2px;
+  /* border: 2px inear-gradient(to right, green, yellow); */
 }
 
 .section-three {
   display: flex;
   flex-direction: row;
   margin-bottom: 2rem;
+  font-size: 1em;
 }
 .section-three-items:first-child {
   flex: 3;
-  border: 2px solid green;
 }
 
 .section-three-items:nth-child(2) {
   display: flex;
   flex-direction: row;
-  flex: 4;
-  border: 2px solid green;
-}
-
-.section-three-items:nth-child(3) {
   flex: 3;
-
+}
+.section-three-input {
+  background-color: whitesmoke;
+  border-bottom: 1px solid gray;
+  width: 80%;
+}
+.section-three-items:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  flex: 3;
+  padding-left: 2rem;
   position: relative;
-  border: 2px solid green;
 }
 
 .item-toggle {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  margin-left: 8rem;
+  background-color: whitesmoke;
+  border: 1px solid gray;
   position: absolute;
+  margin-left: 3rem;
+  padding: 0.2rem 0.2rem;
   /* padding: 0.5rem; */
 }
 
@@ -86,6 +116,7 @@ table {
   border: none;
   border-collapse: collapse;
   background-color: white;
+  font-size: 0.9em;
 }
 
 tr {
@@ -174,7 +205,7 @@ td:nth-child(6) {
   }
 }
 
-@media screen and (max-width: 760px) {
+/* @media screen and (max-width: 760px) {
   .container-trans {
     padding: 0 0.5rem;
   }
@@ -189,9 +220,7 @@ td:nth-child(6) {
     display: flex;
     flex-direction: column;
     background-color: white;
-    margin-left: 1rem;
     position: absolute;
-    /* padding: 0.5rem; */
   }
 
   .showing {
@@ -227,12 +256,10 @@ td:nth-child(6) {
 
   th:nth-child(3) {
     display: none;
-    /* width: 20%; */
   }
 
   th:nth-child(4) {
     display: none;
-    /* width: 20%; */
   }
 
   td {
@@ -268,4 +295,4 @@ td:nth-child(6) {
     padding: 0.5rem 0.5rem;
     width: 80px;
   }
-}
+} */
